@@ -1,11 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reversed = word.split("").reverse().join("")
+  return word === reversed
 }
 
 /* 
-  Add your pseudocode here
-*/
-
+  Add your pseudocode here: 
+  lower case the strings
+  reverse the strings
+  if orignal == reverse
+   then return true
+   else
+   return false
 /*
   Add written explanation of your solution here
 */
@@ -15,7 +20,6 @@ if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
-
   console.log("");
 
   console.log("Expecting: false");
